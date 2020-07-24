@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type ="text/css" href="./Surveyformstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <title> Mamamoo Survey Form </title>
+</head>
+<body>
+  <header>
+    <h1 id = "title"> MAMAMOO Survey Form </h1>
+    <p id = "description"> Thank you for taking the time to fill this form out </p>
+  </header>
+
+  <form id = "survey-form">
+  <div class = "group">
+    <label id = "name-label" for = "name"> Name </label>
+    <input type = "text" id = "name" name = "name" placeholder = "Enter your name (Last, First)" required>
+  </div>
+
+  <div class = "group">
+    <label id = "email-label" for = "email"> Email </label>
+    <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required>
+  </div>
+
+  <div class = "group">
+    <p> Please select your age group </p>
+    <label for = "under10">
+    <input type = "radio" id = "under10" name = "age" value = "under10" checked>
+    Under 10 </label>
+
+    <label for = "10-15">
+    <input type = "radio" id = "10-15" name = "age" value = "10-15">
+    10 - 15 </label>
+
+    <label for = "16-20">
+    <input type = "radio" id = "16-20" name = "age" value = "16-20">
+    16 - 20 </label>
+
+    <label for = "21-25">
+    <input type = "radio" id = "21-25" name = "age" value = "21-25">
+    21 - 25 </label>
+
+    <label for = "26-30">
+    <input type = "radio" id = "26-30" name = "age" value = "26-30">
+    26 - 30 </label>
+
+    <label for = "above30">
+    <input type = "radio" id = "above30" name = "age" value = "above30">
+    Above 30 </label>
+  </div>
+
+  <div class = "group">
+    <label id = "number-label" for = "number"> Moo Years </label>
+    <input type = "number" id = "number" name = "number" step = "0.01" min = "0" max = "7" placeholder = "How many years since you have become a Moo Moo ?" required>
+  </div>
+
+  <div class = "group">
+    <label for = "dropdown"> Who is your favourite member? </label>
+    <select id = "dropdown" name = "dropdown">
+      <option disabled selected value> Select an option </option>
+      <option value = "Solar"> Solar </option>
+      <option value = "Moonbyul"> Moonbyul </option>
+      <option value = "Wheein"> Wheein </option>
+      <option value = "Hwasa"> Hwasa </option>
+      <option value = "All"> All of them! </option>
+    </select>
+  </div>
+
+  <div class = "group">
+    <p> Which of the following concerts have you been to? </p>
+    <label for = "moosical">
+    <input type = "checkbox" id = "moosical" name = "moosical" value = "moosical">
+    Moosical </label>
+
+    <label for = "curtaincall">
+    <input type = "checkbox" id = "curtaincall" name = "curtaincall" value = "curtaincall">
+    Moosical: Curtain Call </label>
+
+    <label for = "4SeasonsS/S">
+    <input type = "checkbox" id = "4SeasonsS/S" name = "4SeasonsS/S" value = "4SeasonsS/S">
+    4 Seasons S/S </label>
+
+    <label for = "4SeasonsF/W">
+    <input type = "checkbox" id = "4SeasonsF/W" name = "4SeasonsF/W" value = "4SeasonsF/W">
+    4 Seasons F/W </label>
+
+    <label for = "japan2018">
+    <input type = "checkbox" id = "japan2018" name = "japan2018" value = "japan2018">
+    1st Concert Tour in Japan (2018) </label>
+
+    <label for = "japan2019">
+    <input type = "checkbox" id = "japan2019" name = "japan2019" value = "japan2019">
+    2nd Concert Tour in Japan : 4 Seasons Final (2019) </label>
+
+    <label for = "none">
+    <input type = "checkbox" id = "noconcert" name = "noconcert" value = "noconcert">
+    None of the above </label>
+
+  </div>
+
+  <div class = "group">
+    <p> Express your love to Mamamoo </p>
+    <textarea id = "comment" name = "comment" placeholder = "What would you like to say to the members?"></textarea>
+  </div>
+
+  <div class = "group">
+    <button id = "submit" type = "submit" value = "submit"> Submit </button>
+  </div>
+
+  </form>
+</body>
+<footer>
+</footer>
+</html>
